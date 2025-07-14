@@ -9,3 +9,4 @@ def save_to_file(username, persona_text):
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(persona_text)
     print(f"[INFO] Persona saved to {filepath}")
+ 
