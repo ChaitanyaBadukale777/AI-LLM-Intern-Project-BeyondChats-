@@ -1,5 +1,8 @@
 # main.py
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from reddit_scraper import extract_username, scrape_user_data
 from persona_generator import generate_persona
 from utils import save_to_file
