@@ -1,5 +1,3 @@
-# main.py
-
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -16,7 +14,7 @@ def main():
     print(f"[INFO] Fetched {len(posts)} posts and {len(comments)} comments.")
 
     print("[INFO] Generating user persona using GPT...")
-    persona_text = generate_persona(posts, comments)
+    persona_text = generate_persona(username, posts, comments)  # ✅ Pass username
 
     save_to_file(username, persona_text)
 
