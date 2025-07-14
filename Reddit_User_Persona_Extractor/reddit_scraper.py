@@ -10,8 +10,8 @@ def extract_username(profile_url):
 def get_reddit_instance():
     """Returns authenticated Reddit instance using PRAW."""
     return praw.Reddit(
-        client_id="rNT5SJLAmBUTYOB3hwgr7w",
-        client_secret="UkXIm7Un2gyN5WKePFvLHdR9GEFAcQ",
+        client_id=os.getenv("REDDIT_CLIENT_ID"),
+        client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
         user_agent="RedditPersonaScript/0.1 by u/realdex7er"
     )
 
