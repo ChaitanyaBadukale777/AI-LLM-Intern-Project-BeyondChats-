@@ -1,5 +1,6 @@
 # reddit_scraper.py
 
+import os
 import praw
 from urllib.parse import urlparse
 
