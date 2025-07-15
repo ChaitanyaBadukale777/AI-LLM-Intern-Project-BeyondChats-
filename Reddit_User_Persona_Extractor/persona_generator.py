@@ -60,19 +60,18 @@ def generate_persona(username, posts, comments):
 
     # Build final prompt
     prompt = (
-        f"You are an AI assistant. Based ONLY on the following real Reddit posts and comments by u/{username}, "
-        "create a structured and professional User Persona.\n\n"
-        "Include:\n"
-        f"- Username: u/{username}\n"
-        "- Age range (if inferable)\n"
-        "- Occupation (if mentioned)\n"
-        "- Interests\n"
-        "- Political Leaning (if detectable)\n"
-        "- Tech-savviness\n"
-        "- Communication Style\n"
-        "- Relevant traits, frustrations, goals, and motivations\n\n"
-        "🚫 Do not invent information. Use only what's provided.\n"
-        "✅ Cite the Post or Comment number that supports each point.\n\n"
+    f"You are an AI assistant. Based ONLY on the following real Reddit posts and comments by u/{username}, "
+    "create a structured and professional User Persona.\n\n"
+    "Include:\n"
+    f"- Username: u/{username}\n"
+    "- Age range (if inferable)\n"
+    "- Occupation (if mentioned)\n"
+    "- Interests\n"
+    "- Political Leaning (if detectable)\n"
+    "- Tech‑savviness\n"
+    "- Communication Style\n"
+    "- Relevant traits, frustrations, goals, and motivations\n\n"
+    "Do not invent any information and avoid mentioning any reference numbers or links.\n\n"
         + content
     )
 
