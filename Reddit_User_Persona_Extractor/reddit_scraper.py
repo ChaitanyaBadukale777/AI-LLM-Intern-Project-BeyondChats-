@@ -1,5 +1,3 @@
-# reddit_scraper.py
-
 import os
 import praw
 from urllib.parse import urlparse
@@ -45,9 +43,8 @@ def scrape_user_data(username):
                 "url": comment.permalink
             })
 
-        print(f"[INFO] Fetched {len(posts)} posts and {len(comments)} comments.")
-
-    except Exception as e:
-        print(f"[ERROR] Could not fetch data for u/{username}: {e}")
+    except Exception:
+        # Fail silently, avoid printing errors
+        return [], []
 
     return posts, comments
