@@ -10,8 +10,8 @@ def main():
     username = extract_username(profile_url)
     print(f"[INFO] Scraping data for u/{username}...")
 
-    posts, comments = scrape_user_data(username)
-    print(f"[INFO] Fetched {len(posts)} posts and {len(comments)} comments.")
+    # posts, comments = scrape_user_data(username)
+    # print(f"[INFO] Fetched {len(posts)} posts and {len(comments)} comments.")
 
     print("[INFO] Generating user persona using GPT...")
     persona_text = generate_persona(username, posts, comments)  # ✅ Pass username
