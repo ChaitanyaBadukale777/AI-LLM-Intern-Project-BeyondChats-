@@ -70,7 +70,7 @@ Sample output based on real data:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/reddit-user-persona-extractor.git
-cd Reddit_User-Persona-Extractor
+cd Reddit_User_Persona_Extractor
 ```
 
 ## Install Dependencies
