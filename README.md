@@ -70,7 +70,7 @@ Sample output based on real data:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/reddit-user-persona-extractor.git
-cd reddit-user-persona-extractor
+cd Reddit_User-Persona-Extractor
 ```
 
 ## Install Dependencies
@@ -91,7 +91,10 @@ OPENROUTER_API_KEY=your_openrouter_api_key
 
 ```bash
 python main.py
+
+Enter Reddit user profile URL: User Reddit Profile Link
 ```
+
 
 ## 📌 Conclusion
 
